@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  
+  <head>
+    <meta charset="utf-8">    
+    <link rel="stylesheet" href="style.css">
+    <title>電卓</title>
+  </head>
+
+　<body>
+    <form name="myForm">
+      <table class="dentaku">
+        <!--液晶画面部-->
+        <tr>
+          <td colspan="3"><input class="display" type="text" name="myLine" value="0" disabled></td>
+          <td><input type="button" value="Ｃ" onclick="get_calc('C')"></td>
+        </tr>
+
+        <!--１段目-->
+        <tr>
+          <td><input type="button" value=" ７ " onclick="get_calc(7)"></td>
+          <td><input type="button" value=" ８ " onclick="get_calc(8)"></td>
+          <td><input type="button" value=" ９ " onclick="get_calc(9)"></td>
+          <td><input type="button" value="÷" onclick="get_calc('/')"></td>
+        </tr>
+
+        <!--２段目-->
+        <tr>
+          <td><input type="button" value=" ４ " onclick="get_calc('4')"></td>
+          <td><input type="button" value=" ５ " onclick="get_calc('5')"></td>
+          <td><input type="button" value=" ６ " onclick="get_calc('6')"></td>
+          <td><input type="button" value="×" onclick="get_calc('*')"></td>
+        </tr>
+
+        <!--３段目-->
+        <tr>
+          <td><input type="button" value=" １ " onclick="get_calc('1')"></td>
+          <td><input type="button" value=" ２ " onclick="get_calc('2')"></td>
+          <td><input type="button" value=" ３ " onclick="get_calc('3')"></td>
+          <td><input type="button" value="－" onclick="get_calc('-')"></td>
+        </tr>
+
+        <!--４段目-->
+        <tr>
+          <td><input type="button" value=" ０ " onclick="get_calc('0')"></td>
+          <td><input type="button" value=" ・ " onclick="get_calc('.')"></td>
+          <td><input type="button" value=" ＋ " onclick="get_calc('+')"></td>
+          <td><input type="button" value="＝" onclick="get_calc('=')"></td>
+        </tr>
+      </table>
+    </form>
+    
+  </body>
+
+  <script src="main.js"></script>

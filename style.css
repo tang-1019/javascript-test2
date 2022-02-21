@@ -1,0 +1,13 @@
+table {
+    box-align:center ;
+    
+}
+
+input {
+    width: 70px;
+    height:30px;
+}
+
+.display{
+    width:250px;
+}
